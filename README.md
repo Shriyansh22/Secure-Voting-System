@@ -6,7 +6,7 @@ The project combines embedded systems, Bluetooth serial communication, and deskt
 
 ---
 
-## 🚀 Features
+# 🚀 Features
 
 - Real-time vote acquisition using Arduino and HC-05 Bluetooth communication
 - Live vote visualization using dynamic bar and pie charts
@@ -44,25 +44,27 @@ The project combines embedded systems, Bluetooth serial communication, and deskt
 |   Application     |
 | Live Charts & UI  |
 +-------------------+
+```
 
+---
 
-## 🛠️ Technologies Used
+# 🛠️ Technologies Used
 
-### Embedded System
+## Embedded System
 - Arduino Uno
 - TTP223 Capacitive Touch Sensors
 - HC-05 Bluetooth Module
 - TM1637 7-Segment Displays
 - LEDs and Buzzer
 
-### Software
+## Software
 - JavaFX
 - Java
 - Gson
 - jSerialComm
 - BCrypt
 
-### Communication
+## Communication
 - UART Serial Communication
 - Bluetooth SPP Protocol
 
@@ -179,6 +181,8 @@ The desktop application provides:
 | Communication Reliability | 98% |
 | Maximum Voting Rate | 60 votes/min |
 
+---
+
 # 🧪 Testing
 
 The system was tested for:
@@ -208,3 +212,105 @@ All tests successfully passed under simulated voting conditions.
 - Online result publishing
 
 ---
+
+# 📂 Project Structure
+
+```text
+Secure-Voting-System/
+│
+├── Arduino_Code/
+│   └── voting_machine.ino
+│
+├── JavaFX_App/
+│   ├── src/
+│   ├── resources/
+│   └── config/
+│
+├── images/
+│   ├── hardware_setup.jpg
+│   └── javafx_dashboard.png
+│
+├── README.md
+└── LICENSE
+```
+
+---
+
+# ⚙️ Installation
+
+## Arduino Side
+
+1. Install Arduino IDE.
+2. Install required libraries:
+   - TM1637Display
+   - SoftwareSerial
+3. Connect all hardware components properly.
+4. Upload `voting_machine.ino` to Arduino Uno.
+
+---
+
+## JavaFX Side
+
+1. Install Java 17 or above.
+2. Install JavaFX SDK.
+3. Add dependencies:
+   - Gson
+   - jSerialComm
+   - BCrypt
+4. Configure the serial COM port.
+5. Run the JavaFX application.
+
+---
+
+# ▶️ How to Run
+
+## Step 1
+Power the Arduino circuit.
+
+## Step 2
+Pair the HC-05 Bluetooth module with the computer.
+
+## Step 3
+Launch the JavaFX desktop application.
+
+## Step 4
+Start voting using capacitive touch sensors.
+
+## Step 5
+Monitor live results on the dashboard.
+---
+
+# 📚 References
+
+1. Arduino Official Documentation  
+   https://www.arduino.cc/
+
+2. JavaFX Official Documentation  
+   https://openjfx.io/
+
+3. HC-05 Bluetooth Module Datasheet  
+   https://components101.com/wireless/hc-05-bluetooth-module
+
+4. TM1637 Display Library  
+   https://github.com/avishorp/TM1637
+
+5. jSerialComm Library Documentation  
+   https://fazecast.github.io/jSerialComm/
+
+6. Gson Library Documentation  
+   https://github.com/google/gson
+
+7. BCrypt Java Documentation  
+   https://www.mindrot.org/projects/jBCrypt/
+
+---
+
+# 📜 License
+
+This project is intended for educational and research purposes.
+
+---
+
+# ⭐ Support
+
+If you like this project, give this repository a star on GitHub.
